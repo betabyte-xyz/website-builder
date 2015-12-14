@@ -1,0 +1,3 @@
+[submodule "betabyte-xyz.github.io"]
+	path = betabyte-xyz.github.io
+	url = git@github.com:betabyte-xyz/betabyte-xyz.github.io.git

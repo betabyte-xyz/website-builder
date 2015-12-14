@@ -1,0 +1,28 @@
+{
+  "name": "betabyte",
+  "version": "1.0.0",
+  "description": "Betabyte.xyz web site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betabyte-xyz/betabyte-xyz.github.io.git"
+  },
+  "author": "Paul Daniel Iway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betabyte-xyz/betabyte-xyz.github.io/issues"
+  },
+  "homepage": "https://github.com/betabyte-xyz/betabyte-xyz.github.io#readme",
+  "dependencies" :
+    {
+      "gulp" : "*",
+      "gulp-wrap" : "*",
+      "gulp-ssg" : "*",
+      "gulp-data" : "*",
+      "gray-matter" : "*",
+      "del" : "*"
+    }
+}

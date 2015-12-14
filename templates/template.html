@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properities -->
+    <title>{{file.data.title}} | {{siteTitle}}</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="semantic/dist/semantic.min.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/css/style.css">
+    {{#file.data.css}}
+    <link rel="stylesheet" type="text/css"
+          href="{{{href}}}">
+    {{/file.data.css}}
+
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="ui fixed blue inverted menu" id="nav">
+    <div class="ui container">
+        <a href="index.html" class="header item">
+            BetaByte
+        </a>
+        <div class="right menu">
+            <a href="index.html" class="item active">Home</a>
+            <a href="about.html" class="item">About</a>
+            <a href="#" class="item">Contact</a>
+        </div>
+    </div>
+</div>
+{{{file.contents}}}
+<div class="ui blue inverted vertical footer segment">
+    <div class="ui center container">
+        <div class="ui stackable inverted divided grid">
+            <div class="nine wide column">
+                <h4 class="ui inverted header">About</h4>
+
+                <div class="ui inverted link list">
+                    <a href="about.html#technical_expertise" class="item">Our Technical Expertise</a>
+                    <a href="about.html#methodology" class="item">Methodology</a>
+                    <a href="about.html#pricing" class="item">Pricing</a>
+                </div>
+            </div>
+            <div class="seven wide center aligned column">
+
+                <a href="signup/freelancer" class="ui inverted button">Drop us a line</a>
+                <div class="ui hidden divider"></div>
+                <div class="social icons">
+                  <a href="#"><i class="facebook square icon"></i></a>
+                  <a href="#"><i class="twitter square icon"></i></a>
+                  <a href="#"><i class="github square icon"></i></a>
+                  <a href="#"><i class="mail outline icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+
+        <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#">Home</a>
+            <a class="item" href="#">About</a>
+            <a class="item" href="#">Contact</a>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="assets/js/common.js"></script>
+
+{{#file.data.js}}
+<script src="{{{src}}}"></script>
+{{/file.data.js}}
+</body>
+</html>

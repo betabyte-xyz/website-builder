@@ -1,0 +1,104 @@
+body {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+p {
+  line-height: 1.8;
+}
+img {
+  width:100%;
+}
+a.popup {
+  text-decoration: none;
+  border-bottom: 1px dashed #999;
+  color: inherit;
+}
+.header.item {
+  font-size: 1.3em;
+}
+.ui.grid{
+  margin:0;
+}
+.ui.footer.segment {
+    padding: 5em 0em;
+}
+.call-to-action-wrap {
+  margin: 25px 0;
+}
+
+#nav {
+    min-height: 70px;
+    margin-bottom: 0px;
+}
+
+.landing {
+    width: 100%;
+    padding-top: 15% !important;
+    padding-bottom: 10% !important;
+    background-color: #00b3fe !important;
+    background-image: url("../images/bg.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+}
+
+@media (max-width: 497px) {
+    .landing {
+        padding-top: 25% !important;
+    }
+}
+
+h1.ui.header {
+    font-size: 4em;
+}
+h2.ui.header {
+  font-size:3em;
+}
+
+#summary_h > div:not(:last-child) {
+    padding: 5% 0;
+}
+
+#summary_h > div:nth-child(+2) {
+    background-color: #eee;
+}
+
+.social.icons a {
+  color:#f7f7f7;
+}
+
+.social.icons a i.icon{
+  font-size: 1.5em;
+}
+.footer .link.list {
+  font-size: .8em;
+}
+.home.screens img {
+  max-width:100%;
+}
+.shadowed {
+  -webkit-box-shadow: 4px 7px 17px 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 4px 7px 17px 1px rgba(0,0,0,0.15);
+  box-shadow: 4px 7px 17px 1px rgba(0,0,0,0.15);
+}
+.content.header {
+  background-color:#00b3fe;
+}
+
+.content.header .ui.header{
+  padding-top:30px;
+  font-size:2em;
+}
+.tech.stack i.icon {
+  font-size: 3em;
+  margin-left: 12px;
+}
+.cebu-bg {
+  background-image: url("../images/wood.jpg") !important;
+  background-position: bottom !important;
+  color: #fff;
+}
+
+.cebu-bg .ui.header{
+  color:#fff;
+}
