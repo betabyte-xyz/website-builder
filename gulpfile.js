@@ -23,7 +23,7 @@ gulp.task('html', function() {
         // Wrap file in template
         .pipe(wrap(
           { src: 'templates/template.html' },
-          { siteTitle: 'Example Website'},
+          { siteTitle: 'Betabyte'},
           { engine: 'mustache'}
         ))
         .pipe(gulp.dest('public/'));
