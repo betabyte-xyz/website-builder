@@ -16,13 +16,16 @@
     "url": "https://github.com/betabyte-xyz/betabyte-xyz.github.io/issues"
   },
   "homepage": "https://github.com/betabyte-xyz/betabyte-xyz.github.io#readme",
-  "dependencies" :
-    {
-      "gulp" : "*",
-      "gulp-wrap" : "*",
-      "gulp-ssg" : "*",
-      "gulp-data" : "*",
-      "gray-matter" : "*",
-      "del" : "*"
-    }
+  "dependencies": {
+    "del": "*",
+    "gray-matter": "*",
+    "gulp": "*",
+    "gulp-data": "*",
+    "gulp-ssg": "*",
+    "gulp-wrap": "*",
+    "mustache": "*",
+    "yargs": "*",
+    "gulp-webserver": "*",
+    "semantic-ui": "^2.1.8"
+  }
 }

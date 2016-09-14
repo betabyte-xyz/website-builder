@@ -5,9 +5,11 @@ var ssg = require('gulp-ssg');
 var data = require('gulp-data');
 var matter = require('gray-matter');
 var del = require('del');
+var args = require('yargs').argv;
+var webserver = require('gulp-webserver');
 
-gulp.task('default', function() {
-  console.log("test");
+gulp.task('default', function(){
+  gulp.run('run');
 });
 
 gulp.task('html', function() {
@@ -23,7 +25,7 @@ gulp.task('html', function() {
         // Wrap file in template
         .pipe(wrap(
           { src: 'templates/template.html' },
-          { siteTitle: 'Betabyte'},
+          { siteTitle: 'StartLabs'},
           { engine: 'mustache'}
         ))
         .pipe(gulp.dest('public/'));
@@ -52,3 +54,16 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', ['assets', 'semantic', 'html', 'cname']);
+
+
+gulp.task('serve', function(){
+  return gulp.src("./public").pipe(webserver({
+      directoryListing: false,
+      open: args.path == undefined ? true:args.path
+    }));
+});
+
+gulp.task('run', ['clean'], function(){
+ gulp.run('build');
+ gulp.run('serve');
+});
